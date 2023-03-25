@@ -1,0 +1,279 @@
+.navbar {
+    box-shadow: 0px 0px 10px #ccc;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(22, 41, 69);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 9999;
+    left: 5px;
+    right: 5px;
+  
+  }
+  .navbar button {
+    color: #fff; /* Change button text color to white */
+    background-color: rgb(22, 41, 69); /* Match button background color with navbar */
+    border: 1px solid #fff; /* Add white border to make button distinct */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 5px 10px; /* Add some padding for visual appeal */
+    text-align: center; /* Center the text within the button */
+    width: 120px; /* Specify a width to fit the button within the navbar */
+    text-decoration: none; /* Remove text underline */
+    font-size: 14px; /* Decrease font size to make button fit in navbar */
+  }
+  .logo {
+    height: 100px;
+
+    transform: scaleX(-1);
+    transition: transform 0.5s ease;
+  }
+  
+  .logo:hover {
+    transform: scaleX(-1) rotate(360deg);
+  }
+  
+.create-subgreddit-form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: linear-gradient(
+    rgb(229, 152, 152),
+    rgb(246, 246, 183),
+    rgb(174, 174, 225)
+  );
+  border-color: black;
+  border-radius: 5px;
+  color: black;
+  font-size: large;
+  font-style: oblique;
+  z-index: 1; /* A higher value ensures the form will be on top of other elements */
+  
+  
+}
+
+.create-subgreddit-form input {
+  margin: 10px 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #b1dce6;
+  font-size: 16px;
+  width: 80%;
+}
+
+.create-subgreddit-form textarea {
+  margin: 10px 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #baeff1;
+  font-size: 16px;
+  width: 80%;
+}
+.create-subgreddit-form button {
+  margin: 10px 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #b2f0b4;
+  color: rgb(227, 166, 166);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-subgreddit-form button:hover {
+  background-color: #3e8e41;
+}
+
+
+.create-post-button {
+  width: auto;
+  height: auto;
+  font-weight: bold;
+  background-color: rgb(234, 214, 122);
+  border-radius: 5px;
+  border: 2px solid rgb(251, 121, 0);
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  
+}
+
+.view-post-button {
+  width: auto;
+  height: auto;
+  font-weight: bold;
+  background-color: rgb(234, 214, 122);
+  border-radius: 5px;
+  border: 2px solid rgb(251, 121, 0);
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  
+}
+
+
+table {
+  margin-top: 60px;
+  width: 80%;
+  height: 80%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: rgb(185, 188, 242);
+  border: 2px solid rgb(58, 17, 17);
+  color: black;
+  font-size: medium;
+}
+
+th, td {
+  border: 1px solid rgb(4, 4, 4);
+  border-width: 2px;
+  padding: 10px;
+  font-weight: bold;
+  width: 30%;
+  height: 30px;
+}
+.tablebutton {
+  background-color: rgb(239, 237, 169);
+  color: rgb(248, 3, 130);
+  padding: 10px 20px;
+  border-radius: 5px;
+ max-width: 150px;
+}
+.tablebutton2 {
+  background-color: transparent;
+  color: rgb(255, 225, 1);
+  max-width: 150px;
+  height: auto;
+}
+.reportform {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #1b1616;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(210, 114, 114, 0.2);
+  background-color: #a3e1dd;
+  padding: 20px;
+  color: black;
+}
+
+.reportform label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.reportform input[type="text"],
+.reportform textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #efb3b3;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.reportform input[readonly] {
+  background-color: #e8c6c6;
+}
+.reportform input {
+  background-color: #f4e9c4;
+}
+
+.reportform input[type="submit"] {
+  background-color: #9fe2a1;
+  color: rgb(224, 155, 155);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reportform input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modals {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modals-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-height: 80%;
+  overflow-y: auto;
+  color: black;
+}
+
+.modals-content h2 {
+  margin-top: 0;
+}
+.closes {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closes:hover,
+.closes:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}

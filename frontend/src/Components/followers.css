@@ -1,0 +1,14 @@
+
+  .remove-follower {
+    background-color: #ec8074;
+    color: #89c2b1;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .remove-follower:hover {
+    background-color: #e8da83;
+  }
+  

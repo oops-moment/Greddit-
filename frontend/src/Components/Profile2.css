@@ -1,0 +1,360 @@
+/* Set the background color for the main container */
+.main {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+
+ .navbar {
+  box-shadow: 0px 0px 10px #ccc;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(22, 41, 69);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 9999;
+}
+.navbar button {
+  color: #fff; /* Change button text color to white */
+  background-color: rgb(22, 41, 69); /* Match button background color with navbar */
+  border: 1px solid #fff; /* Add white border to make button distinct */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 5px 10px; /* Add some padding for visual appeal */
+  text-align: center; /* Center the text within the button */
+  width: 120px; /* Specify a width to fit the button within the navbar */
+  text-decoration: none; /* Remove text underline */
+  font-size: 14px; /* Decrease font size to make button fit in navbar */
+} 
+.dropdown button {
+  color: #fff; /* Change button text color to white */
+  background-color: rgb(22, 41, 69); /* Match button background color with navbar */
+  border: 1px solid #fff; /* Add white border to make button distinct */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 5px 10px; /* Add some padding for visual appeal */
+  text-align: center; /* Center the text within the button */
+  width: 120px; /* Specify a width to fit the button within the navbar */
+  text-decoration: none; /* Remove text underline */
+  font-size: 14px; /* Decrease font size to make button fit in navbar */
+} 
+.dropdown button:hover {
+  background-color: rgb(239, 94, 94);
+  color: #fff;
+} 
+.navbar button:hover {
+  background-color: rgb(239, 94, 94);
+  color: #fff;
+} 
+
+.dropdown-content-container {
+  display: none;
+}
+
+.dropdown-content-container.show {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: rgb(143, 235, 238);
+  border: 1px solid hsl(0, 70%, 13%); 
+  border-radius: 5px; 
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(252, 162, 162, 0.2);
+  top: 70px;
+  right: 15px;
+  z-index: 8000;
+}
+
+.dropdown-trigger {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dropdown-content button {
+  display: block;
+  padding: 10px 10px;
+  color: #333;
+  background-color: rgb(195, 248, 243);
+  text-align: center;
+  width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(155, 144, 144, 0.2);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #fb5151;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.LOGOUT{
+  /* Logout button */
+  
+  background-color: #f44336; /* red */
+  color: #fff; /* white text */
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  max-width: 123px;
+
+
+}
+.LOGOUT:hover {
+  background-color: #e53935; /* dark red */
+}
+/* Style the profile card */
+.content-profile-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.profile-user-page {
+
+  background-image: url("../Photos/login.jpg");
+  padding: 30px;
+  /* box-shadow: 0px 0px 10px #ccc; */
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Style the background and avatar images */
+.img-user-profile {
+  position: relative;
+ 
+}
+
+.profile-bgHome {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding: 20px;
+}
+
+
+.avatar {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  }
+  
+ 
+  .followers-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #e8dd4f;
+    color: #e53935;
+  }
+  
+/* Style the user's name and username */
+.user-profile-data {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.user-profile-data p {
+  font-size: 1.2em;
+  color: #aaa;
+}
+
+.user-profile-data h1 {
+  font-size: 3em;
+  margin-bottom: 5px;
+  /* font-size: larger; */
+  color: #e53935;
+}
+
+/* Style the user's description */
+.description-profile h2{
+  text-align: center;
+  font-size: 1.3em;
+  color: #777;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+/* Style the user's data (posts, followers, following) */
+.data-user {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  list-style: none;
+}
+.data-user li {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.data-user strong {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.data-user span {
+  font-size: 1.2em;
+  color: #aaa;
+}
+
+/* Style the follow button */
+
+
+/* Style the footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  color: #aaa;
+}
+
+footer a {
+  color: #666;
+}
+
+.data-user a {
+  display: block;
+  padding: 10px;
+  background-color: #ccc;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+
+.data-user a:hover {
+  background-color: #fff; /* or any other color you want */
+  color: #000; /* or any other color you want */
+}
+.edit-profile{
+  max-width: 150px;
+  font-size: 1.5em;
+}
+.data-user li {
+  display: inline-block;
+}
+.data-user li a {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px 10px; /* Decrease the padding */
+  font-size: 1em; /* Decrease the font-size */
+  margin: 2px 1px; /* Decrease the margin */
+}
+.data-user li a:hover {
+  background-color: #3e8e41;
+}
+.data-user li a strong, .data-user li a span{
+  color: white;
+}
+
+.content-profile-page {
+  width: 100%;
+}
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: linear-gradient(rgb(229, 152, 152), rgb(246, 246, 183), rgb(174, 174, 225));
+}
+
+.edit-form input {
+  margin: 10px 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  width: 80%;
+}
+
+.edit-form button {
+  margin: 10px 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.edit-form button:hover {
+  background-color: #3e8e41;
+}
+
+.img-user-profile {
+  position: relative;
+}
+.img-user-profile:hover{
+  transform: scale(1.1); /* Scale up the image by 10% */
+}
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+  .content-profile-page {
+    width: 100%;
+  }
+  .profile-user-page {
+    width: 100%;
+  }
+  .data-user li {
+    display: block;
+    margin: 10px 0px;
+  }
+  .edit-profile {
+    max-width: 100%;
+  }
+ 
+    
+  
+}
+
+

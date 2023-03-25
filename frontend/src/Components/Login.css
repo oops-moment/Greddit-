@@ -1,0 +1,47 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5px;
+    /* background-image: url('/home/prisha/React/frontend/src/Photos/login.jpg'); */
+    background-image: url('../Photos/login.jpg'); 
+    background-size: cover;
+}
+body {
+    /* background: url('/home/prisha/React/frontend/src/Photos/login.jpg') no-repeat center center fixed;  */
+    background: url('../Photos/login.jpg') no-repeat center center fixed; 
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.login-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-form input, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+}
+
+
+.login-form .link-btn {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+    color: chartreuse;
+    font-weight: bold;
+    font-size: large;
+}
